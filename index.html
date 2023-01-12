@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <div class="logo">
+          <img src="https://ag-quiz-2022.surge.sh/logo.jpg">
+        </div>
+        <ul>
+          <li><a href="#">Home</a> </li>
+          <li><a href="#">Work</a> </li>
+          <li><a href="#">Case Studies</a> </li>
+          <li><a href="#">Open source </a> </li>
+          <li><a href="#">Book</a> </li>
+          <li><a href="#">Contact</a> </li>
+        </ul>
+    </header>
+  </div>
+  <div class="title">
+    <h1>Understanding the fundamentals of state in Javascript</h1>
+    
+  </div>
+
+ 
+
+
+
+
+<section class="work" id="Work">
+
+<h1 class ="heading">What is State? <span></span> </h1>
+<div class="row-1">
+    
+        
+    </div>
+
+    <div class="content">
+       <h3> State is a JavaScript object that stores a component’s dynamic data and determines the component’s behaviour. Because state is dynamic, it enables a component to keep track of changing information in between renders and for it to be dynamic and interactive.</h3> 
+       <p>
+          </p>
+       <div class="box-container">
+        <div class="box">
+
+            <p> <span>  stateful program is a program whose output depends on external states (events).
+
+              Whenever a program is stateful, it means that the program manages (mutates) one or more states.</span></p>
+         
+        </div>
+
+        <div class="box">
+
+            <p> <span> State is a plain JavaScript object used by React to represent an information about the component’s current situation.
+              It’s managed in the component (just like any variable declared in a function). The difference is while a “normal” variable “disappears” when their function exits, the state variables are preserved by React.
+              
+              Now to take a step back; since the role of the component is to translate raw data into HTML, we can consider that this raw data is made out of props and state objects. We could even say that props and state are the input data for the render() function. So the State represents some property (or properties) that controls the behavior of the component.
+              
+              As a rule of thumb, If the Component needs to act it’s own attribute changes, then those attributes should be part of its state. Local state is a feature only available to classes. What this Means for functional Components is to be discussed later.
+              
+              It’s not mandatory to use States and since it increases complexity, a stateless component is always preferable. This however is inevitable in an interactive app.</span>State is similar to props but unlike props, it is private to a component and is controlled solely by the said component. In the examples from previous chapters, the behaviour of components has primarily depended on the props that are passed down to them. In those cases, the components that receive the props have no control over them because props are read-only.</p>
+            
+            
+            
+        </div>
+        <!--<a href="#" class="btn">download CV</a>-->
+        
+
+
+
+
+
+
+
+       </div>
+    </div>
+
+</div>
+
+<h1 class="heading"><span>Adding State to a Class Component</span></h1>
+
+
+
+<div class="Add Sate">
+<h3>class Greeting extends React.Component {
+  render(){
+    return <h1>I’m a component in need of some state! </h1>;
+  }
+}
+<span>  In React, state refers to a structure that keeps track of how data changes over time in your application. Managing state is a crucial skill in React because it allows you to make interactive components and dynamic web applications. State is used for everything from tracking form inputs to capturing dynamic data from an API. In this tutorial, you’ll run through an example of managing state on class-based components.
+
+  As of the writing of this tutorial, the official React documentation encourages developers to adopt React Hooks to manage state with functional components when writing new code, rather than using class-based components. Although the use of React Hooks is considered a more modern practice, it’s important to understand how to manage state on class-based components as well. Learning the concepts behind state management will help you navigate and troubleshoot class-based state management in existing code bases and help you decide when class-based state management is more appropriate. There’s also a class-based method called componentDidCatch that is not available in Hooks and will require setting state using class methods.</span></h3>
+<div class=><span></span></div>
+</div>
+
+<div class="progress">
+<h3>The correct usage of State implicates that one does not apply changes directly to the state variable, since this won’t be considered a change by React. Instead we should go through this using setState() which is the function that schedules updates to state objects.
+  However, setState() does not always immediately update the component. It may batch or defer the update until later. This makes reading this.state right after calling setState() a potential pitfall.
+  
+  As a matter of fact, setState() is asynchronous ; One can’t expect to call setState() on one line and assume the state has been updated on the next line.
+  The reason is that setState() is a mere request to update state rather than an immediate command to update it. <span>  </span></h3>
+<div class="bar"><span></span></div>
+</div>
+
+
+    
+</section>
+
+<!--- education section-->
+
+<section class="case studies" id="Investigating State using React Dev Tools">
+
+<h1 class="heading"><span>Investigating State using React Dev Tools</span></h1>
+
+<div class="box-container">
+    <div class="box">
+        <div class="content">
+            <span></span>
+            <h3> React Developer Tools (known as Devtools) is a Chrome and Firefox extension that adds a set of React-specific inspection widgets to help you with development. You'll get two key features when you install React Devtools: a view of the component tree, and the current state and props of each component you select.  For a better understanding of React, visit usereducer in React. 
+
+              You've probably tried the official React devtools if you're a React developer. This Chrome and Firefox plugin is meant to assist you in debugging React apps in a variety of situations, including mobile browsers, Safari, embedded web views, and iframes. 
+              
+              One of the most useful talents a developer can have is debugging. It enables you to traverse your code correctly and rapidly identify issues. This is achievable on the modern web thanks to a variety of tools and strategies. 
+              
+              React is one of the most popular front-end frameworks today. It simplifies the process of designing sophisticated and interactive user interfaces. It contains a collection of debugging tools called React development tools, just like other frameworks. </h3>
+            <h3>obtained 80.02 percentage</h3>
+        </div>
+    </div>
+    <div class="box">
+        <div class="content">
+            <span>What is React DevTools?</span>
+            <h3> For the React JavaScript library. If you're working on React.js applications, this is a great tool to have. React development tools (React DevTools) is a browser plugin that allows you to investigate the React component hierarchy in the Chrome developer tools. It is available for Chrome, Firefox, and as a standalone app. 
+
+              This extension extends the Chrome Developer Capabilities to provide React debugging tools. It allows you to inspect and change the React component tree that makes up the page, and you can check props, state, hooks, and other things for each component.  
+              
+              The React Developer tools extension may also tell you whether or not React.js was used in a given application. It's also compatible with Firefox.</h3>
+            <h3>How to Install React Developer Tools and How to Use It?</h3>
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="box">
+        <div class="content">
+            <span>For the React JavaScript library, React Devtools extension is a Chrome DevTools extension. If you're working on React.js applications, this is a great tool to have. </span>
+            <h3> This extension extends the Chrome Developer Capabilities to provide React debugging tools. It allows you to inspect and update the React component tree that creates the page, and it allows you to verify props, state, hooks, and more for each component</h3>
+            <h3> Go to the Extensions Tab on the right side of the screen and select it. The extension has been added, as seen in the dropdown.  </h3>
+        </div>
+    </div>
+
+</div>
+
+        
+    </section>
+
+    <!--portfolio section-->
+
+    <section class="open source " id="Open souce">
+        <h1 class="heading"><span></span>
+            
+
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                
+                <h3>React is a JavaScript library for building user interfaces.
+
+                  React is:
+                  
+                  Declarative: React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
+                  Component-Based: Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+                  Learn Once, Write Anywhere: We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. React can also render on the server using Node and power mobile apps using React Native.</h3>
+                
+              
+                
+
+
+               </div>
+
+            </div>
+
+
+          
+            
+
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+<!--contact section-->
+
+<section class="contact" id="contact">
+
+ <h1 class="heading">contact <span>me</span></h1>
+
+<div class="icons-container">
+<div class="icons">
+<i class="fas fa-envelope"></i>
+<h3>my email</h3>
+<p>shivangi.sinha008@gmail.com</p>
+
+</div>
+<div class="icons-container">
+<div class="icons">
+<i class="fas fa-phone"></i>
+<h3>my number</h3>
+<p>8010110567</p>
+
+</div>
+
+
+<div class="icons-container">
+    <div class="icons">
+   <i class="fas fa-city"></i>
+   <h3>city</h3>
+   <p>new Delhi</p>
+   
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</section>-->
+
+<footer> created by <span> shivangi</span> | all rights reserved</footer>
+
+
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+    
+
+
+
+
+
+
+    
+  </body>
+</html>
